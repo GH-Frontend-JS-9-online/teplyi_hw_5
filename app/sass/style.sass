@@ -1,0 +1,419 @@
+@import url(../fonts/fonts.css)
+
+*
+    margin: 0
+    padding: 0
+
+body 
+    font-family: 'Montserrat'
+    background: #ffffff
+    text-align: left
+    box-sizing: border-box
+    
+#wrapper
+    width: 100%
+    height: 100%
+    display: table
+    overflow: hidden
+    table-layout: fixed
+
+.list 
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+a
+    &:hover
+        text-decoration: none
+
+.dot_color_r
+    color: #f0454c
+
+// top
+
+.top
+    background-image: url(../images/bg/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top
+    height: 1057px
+
+    .top__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    .hamburger-menu
+        display: flex
+
+        .menu__toggle
+            opacity: 0
+
+        .menu__box
+            display: flex
+            align-items: center
+
+        .menu__link_invisible
+            display: none
+
+        .menu__link
+            color: #263742 
+            font-size: 14px 
+            font-weight: 700 
+            text-transform: uppercase 
+            margin-right: 40px
+            transition: color linear .2s
+            &:hover
+                color: #45535c
+
+        .menu__icon
+            color: #fa5c65
+            margin-right: 25px
+            transition: color linear .2s
+            &:hover
+                color: #db5f65
+
+    .top__slogan
+        margin-top: 320px
+
+        .top__title
+            color: #314a5b 
+            font-size: 48px 
+            font-weight: 700 
+            text-transform: uppercase 
+            letter-spacing: -1.44px 
+
+        .dot_color_r
+            color: #f0454c
+
+        .top__text
+            color: #314a5b 
+            font-family: "Open Sans" 
+            font-size: 20px 
+            font-weight: 400 
+            margin-bottom: 40px
+
+        .top__button
+            color: #ffffff 
+            display: inline-block
+            font-family: "Open Sans" 
+            font-size: 15px 
+            font-weight: 700 
+            text-transform: uppercase 
+            background: #fa5c65
+            border-radius: 5px
+            padding: 25px 40px
+            transition: background linear .2s
+            &:hover
+                background: #db5f65
+
+// content
+
+.content   
+    margin-top: 85px
+
+    &__item
+        padding-left: 0
+
+    &__subtitle
+        color: #465065 
+        font-size: 26px 
+        font-weight: 700 
+        text-transform: uppercase 
+        line-height: 1
+        margin-bottom: 25px
+
+    &__text
+        color: #9aa0ab 
+        font-family: "Open Sans" 
+        font-size: 15px 
+        font-weight: 400 
+        line-height: 22px
+
+    &__link
+        color: #f0454c 
+        font-size: 14px 
+        font-weight: 700 
+        text-transform: uppercase 
+        transition: color linear .2s
+        &::after
+            content: '🡒'
+            margin-left: 7px
+        &:hover
+            color: #db5f65
+
+    .last-link
+        display: flex
+        justify-content: flex-end
+        margin-bottom: 60px
+    
+.portfolio
+    margin: 105px 0
+
+    &__item
+        position: relative 
+        padding-left: 0
+
+    &__shadow
+        width: 95px
+        height: 100%
+        position: absolute
+        z-index: 99
+        box-shadow: inset 14px 4px 20px 0px rgba(0,0,0,0.05)
+
+    &__image
+        width: 100%
+        max-width: 390px
+
+    &__title
+        color: #314a5b 
+        font-size: 40px 
+        font-weight: 700 
+        text-transform: uppercase 
+        letter-spacing: -1.2px 
+        line-height: 1
+        margin-bottom: 17px
+
+    &__subtitle
+        color: #314a5b 
+        font-family: "Open Sans" 
+        font-size: 16px 
+        font-weight: 700 
+        line-height: 1
+        margin-bottom: 30px
+
+    &__text 
+        color: #9aa0ab
+        font-family: "Open Sans"
+        font-size: 15px
+        font-weight: 400
+        margin-bottom: 45px
+
+.team
+    &__title
+        color: #314a5b 
+        font-size: 32px 
+        font-weight: 700 
+        text-transform: uppercase 
+        letter-spacing: -0.48px 
+        line-height: 1
+        margin-bottom: 16px
+
+    &__subtitle
+        color: #9aa0ab 
+        font-family: "Open Sans" 
+        font-size: 16px 
+        font-weight: 400
+        line-height: 1
+        margin-bottom: 40px
+
+    &__avatar
+        min-width: 120px 
+        height: 120px 
+        border-radius: 50%
+        box-shadow: inset 3px 4px 9px rgba(1, 1, 1, 0.06) 
+        margin-right: 20px
+
+    &__list
+        display: flex
+
+    &__item
+        display: flex
+        padding-left: 0
+        margin-bottom: 55px
+
+    &__name
+        color: #314a5b 
+        font-size: 22px 
+        font-weight: 700 
+        text-transform: uppercase 
+        letter-spacing: -0.33px
+        line-height: 1
+        margin-bottom: 11px 
+
+    &__job
+        color: #f0454c 
+        font-family: "Open Sans" 
+        font-size: 14px 
+        font-weight: 700 
+        line-height: 1
+        margin-bottom: 14px
+
+    &__desc
+        color: #9aa0ab 
+        font-family: "Open Sans" 
+        font-size: 14px 
+        font-weight: 400 
+        margin-bottom: 0
+
+    .avatar1  
+        background: url(../images/logo/logo_1.png) 
+
+    .avatar2  
+        background: url(../images/logo/logo_2.png) 
+
+    .avatar3
+        background: url(../images/logo/logo_3.png) 
+// footer
+
+.footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 35px 15px
+    border-top: 1px solid #e6eaed
+    
+    &__list
+        display: flex
+
+    &__item
+        margin-right: 22px
+
+    &__icon
+        color: #b9c0c6
+        transition: color linear .2s
+        &:hover
+            color: #8a949c
+
+    &__desc
+        color: #b9c0c6
+        font-family: "Open Sans"
+        font-size: 13px
+        font-weight: 400
+        margin: 0
+
+@media ( max-width: 767px )
+    .top .top__slogan .top
+        &__title
+            font-size: 40px
+
+    .top .top__header .menu__toggle 
+        opacity: 0
+        transform: scale(2)
+        position: relative
+        left: 20px
+        top: 7px
+        z-index: 1
+        &:checked ~ .menu__btn > span 
+            transform: rotate(45deg)
+            &::before 
+                top: 0
+                transform: rotate(0)
+                    
+            &::after 
+                top: 0
+                transform: rotate(90deg)
+                    
+        &:checked ~ .menu__box 
+            visibility: visible
+            left: 0
+                
+
+    .top .top__header .menu__btn 
+        display: flex
+        align-items: center
+        position: relative
+        width: 26px
+        height: 26px
+        cursor: pointer
+        margin: 0
+
+        > span, > span::before, > span::after 
+            display: block
+            position: absolute
+            width: 100%
+            height: 2px
+            background: #333333
+            transition-duration: .25s
+                
+        > span::before 
+            content: ''
+            top: -8px
+                
+        > span::after 
+            content: ''
+            top: 8px
+                
+    .top .top__header .menu__box 
+        display: block
+        position: absolute
+        visibility: hidden
+        left: -100%
+        width: 100%
+        max-width: 480px
+        height: 800px
+        margin-top: 67px
+        border-radius: 0 0 10px 10px
+        background: #f4f4f4
+        transition-duration: .25s
+        z-index: 99
+
+    .top .top__header .menu__link
+        display: block
+        text-align: left
+        padding-left: 33px
+        color: #314a5b
+        font-size: 32px
+        font-weight: 700
+        line-height: 106px
+        margin: 0
+        border-bottom: 1px solid #314a5b2c
+        transition-duration: .25s
+        &:hover 
+            color: #fa5c64d2
+
+    .top .top__header .menu__link_invisible
+        display: block
+
+    .top .top__header .menu__desc
+        padding-left: 33px
+        color: #314a5b8e
+        font-size: 32px
+        font-weight: 700
+        line-height: 106px
+
+    .top .top__header .menu__icon
+        padding-left: 33px
+        color: #314a5b
+        font-size: 4em
+        font-weight: 700
+        line-height: 106px
+        &:hover
+            color: #fa5c64d2
+
+    .footer 
+        display: block
+
+        &__list
+            justify-content: center   
+            margin-bottom: 15px
+                    
+        &__desc
+            text-align: center
+
+@media ( max-width: 992px )
+    .content
+        &__item
+            min-width: 70%
+            margin-bottom: 25px
+
+    .portfolio
+        margin: 60px 0
+        &__item
+            min-width: 70%
+            margin-bottom: 25px
+    
+        &__item_order_1
+            order: 1
+
+    .team
+        &__item
+            min-width: 70%
+
+@media( max-width: 479px )
+    .top
+        background-position: 55%
+        .top__slogan .top
+            &__text
+                font-size: 15px
+    
